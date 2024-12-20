@@ -35,9 +35,12 @@ function displayResults(movies) {
       const movieElement = document.createElement("div");
       movieElement.classList.add("result-item");
 
+      // Create the movie link with a dynamic search query in the URL
+      const movieLink = `https://123moviehd.in/search?q=${encodeURIComponent(movie.title)}`;
+
       movieElement.innerHTML = `
         <img src="${movie.posterUrl}" alt="${movie.title}">
-        <h3><a href="${movie.url || '#'}" target="_blank">${movie.title} (${movie.year})</a></h3>
+        <h3><a href="${movieLink}" target="_blank">${movie.title} (${movie.year})</a></h3>
         <p>${movie.plot}</p>
       `;
 
