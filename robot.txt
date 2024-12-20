@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+Allow: /movie/
+Allow: /genres/
+Allow: /search
+Allow: /sitemap.xml
+
+Disallow: /admin/
+Disallow: /api/
+Disallow: /includes/
+
+User-agent: Googlebot
+Allow: /
+Allow: /*.js
+Allow: /*.css
+Allow: /*.png
+Allow: /*.jpg
+
+Crawl-delay: 10
+Sitemap: https://celopati123.github.io/MovieStreamingSites/sitemap.xml
