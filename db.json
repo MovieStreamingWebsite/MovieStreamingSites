@@ -21,6 +21,7 @@
         "Horror",
         "Musical",
         "Sport"
+        "Games"
     ],
     "movies": [
         {
@@ -2133,6 +2134,21 @@
             "actors": "Peyman Moaadi, Leila Hatami, Sareh Bayat, Shahab Hosseini",
             "plot": "A married couple are faced with a difficult decision - to improve the life of their child by moving to another country or to stay in Iran and look after a deteriorating parent who has Alzheimer's disease.",
             "posterUrl": "http://ia.media-imdb.com/images/M/MV5BMTYzMzU4NDUwOF5BMl5BanBnXkFtZTcwMTM5MjA5Ng@@._V1_SX300.jpg"
+        },
+        ,
+        {
+            "id": 147,
+            "title": "Beast Games",
+            "year": "2024",
+            "runtime": "123",
+            "genres": [
+                "Games",
+                "Entertainment"
+            ],
+            "director": "MrBeast",
+            "actors": "MrBeast",
+            "plot": "2,000 People Fight For $5,000,000. 50 of the people that were eliminated in this video were randomly selected to come back for episode 1 of Beast Games due to scheduling conflicts and other contestants unable to attend. All footage was reviewed for all eliminations, decisions and any actions taken by contestants. Thank you to the Las Vegas Raiders & Allegiant Stadium for hosting us at their incredible stadium.",
+            "posterUrl": "https://123moviehd.in/search?q=beast%20games"
         },
         {
             "id": 146,
