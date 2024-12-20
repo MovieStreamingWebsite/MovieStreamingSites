@@ -40,7 +40,7 @@ function displayResults(movies) {
 
       movieElement.innerHTML = `
         <img src="${movie.posterUrl}" alt="${movie.title}">
-        <h3><a href="${movieLink}" target="_blank">${movie.title} (${movie.year})</a></h3>
+        <h3><a href="${movieLink}" >${movie.title} (${movie.year})</a></h3>
         <p>${movie.plot}</p>
       `;
 
