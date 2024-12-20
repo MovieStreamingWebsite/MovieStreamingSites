@@ -9,7 +9,7 @@ async function searchMovie() {
   if (query) {
     try {
       // Fetch the JSON data from the server
-      const response = await fetch('https://123moviehd.in/db.json');
+      const response = await fetch('https://celopati123.github.io/MovieStreamingSites/db.json');
       const data = await response.json();
 
       const filteredMovies = data.movies.filter(movie =>
