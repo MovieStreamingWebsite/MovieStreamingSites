@@ -20,7 +20,7 @@
         "Western",
         "Horror",
         "Musical",
-        "Sport"
+        "Sport",
         "Games"
     ],
     "movies": [
@@ -2135,7 +2135,7 @@
             "plot": "A married couple are faced with a difficult decision - to improve the life of their child by moving to another country or to stay in Iran and look after a deteriorating parent who has Alzheimer's disease.",
             "posterUrl": "http://ia.media-imdb.com/images/M/MV5BMTYzMzU4NDUwOF5BMl5BanBnXkFtZTcwMTM5MjA5Ng@@._V1_SX300.jpg"
         },
-        ,
+        
         {
             "id": 147,
             "title": "Beast Games",
