@@ -35,12 +35,12 @@ function displayResults(movies) {
       const movieElement = document.createElement("div");
       movieElement.classList.add("result-item");
 
-      // Create the movie link with a unique URL for each movie
-      const movieLink = `https://123moviehd.in/movie/${encodeURIComponent(movie.title.toLowerCase().replace(/\s+/g, '-'))}`;
+      // Create the search result link to the search page, not the movie page
+      const movieSearchLink = `https://123moviehd.in/search?q=${encodeURIComponent(movie.title)}`;
 
       movieElement.innerHTML = `
         <img src="${movie.posterUrl}" alt="${movie.title}">
-        <h3><a href="${movieLink}">${movie.title} (${movie.year})</a></h3>
+        <h3><a href="${movieSearchLink}">${movie.title} (${movie.year})</a></h3>
         <p>${movie.plot}</p>
       `;
 
@@ -95,11 +95,11 @@ async function generateSitemap() {
       <priority>1.0</priority>
     </url>\n`;
 
-    // Add movie pages from db.json
+    // Add movie pages from db.json (but these will not link to individual movie pages)
     movies.forEach(movie => {
-      const slug = movie.title.toLowerCase().replace(/\s+/g, '-');
+      const searchLink = `${baseUrl}/search?q=${encodeURIComponent(movie.title)}`;
       sitemap += `  <url>
-      <loc>${baseUrl}/movie/${slug}</loc>
+      <loc>${searchLink}</loc>
       <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
