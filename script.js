@@ -10,7 +10,7 @@ async function searchMovie() {
 
     // Fetch the movies data
     try {
-      const response = await fetch('https://celopati123.github.io/MovieStreamingSites/db.json');
+      const response = await fetch('https://moviestreamingwebsite.github.io/MovieStreamingSites/db.json');
       const data = await response.json();
       const filteredMovies = data.movies.filter(movie =>
         movie.title.toLowerCase().includes(query.toLowerCase())
@@ -92,7 +92,7 @@ window.onload = async function() {
     document.getElementById("search-bar").value = query;
 
     try {
-      const response = await fetch('https://celopati123.github.io/MovieStreamingSites/db.json');
+      const response = await fetch('https://moviestreamingwebsite.github.io/MovieStreamingSites/db.json');
       const data = await response.json();
       const filteredMovies = data.movies.filter(movie =>
         movie.title.toLowerCase().includes(query.toLowerCase())
@@ -115,7 +115,7 @@ async function generateSitemap() {
 
   // Fetch movies data
   try {
-    const response = await fetch('https://celopati123.github.io/MovieStreamingSites/db.json');
+    const response = await fetch('https://moviestreamingwebsite.github.io/MovieStreamingSites/db.json');
     const data = await response.json();
     const movies = data.movies;
 
