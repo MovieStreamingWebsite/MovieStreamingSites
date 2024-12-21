@@ -57,18 +57,15 @@ function displayResults(movies) {
 
       const movieLink = `https://123moviehd.in/movie/${encodeURIComponent(movie.title.toLowerCase().replace(/\s+/g, '-'))}`;
 
-      // Movie item HTML with title, poster, and details
-      movieElement.innerHTML += `
-        <img src="${movie.posterUrl}" 
-             alt="${movie.title} poster"
-             width="200" height="300"
-             loading="lazy">
-        <h2><a href="${movieLink}" title="Watch ${movie.title}">${movie.title} (${movie.year})</a></h2>
+      // Movie item HTML with title, poster, and details (simplified version similar to your original working code)
+      movieElement.innerHTML = `
+        <img src="${movie.posterUrl}" alt="${movie.title} poster" width="200" height="300" loading="lazy">
+        <h3><a href="${movieLink}" title="Watch ${movie.title}">${movie.title} (${movie.year})</a></h3>
         <p>${movie.plot}</p>
         <div class="movie-meta">
-            <span>Director: ${movie.director}</span>
-            <span>Genre: ${movie.genres.join(", ")}</span>
-            <span>Runtime: ${movie.runtime} min</span>
+          <span>Director: ${movie.director}</span>
+          <span>Genre: ${movie.genres.join(", ")}</span>
+          <span>Runtime: ${movie.runtime} min</span>
         </div>
       `;
 
